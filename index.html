@@ -16,6 +16,17 @@
 
   <title>Vocab.pl - aplikacja do nauki słówek</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118800232-3"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      if (window.location.hostname === "app.vocab.pl") {
+        gtag('config', 'G-YTSL1373Q6');
+      }
+  </script>
 </head>
 <body id="orient">
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -24,7 +35,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=2378074244');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2594363398');
       });
     }
   </script>
